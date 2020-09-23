@@ -1,0 +1,15 @@
+<article [ngClass]="{'dark': viewMode, 'light': !viewMode}">
+  <div class="top-border" [ngClass]="data.platform + '-border'"></div>
+  <p class="link">
+    <img [src]="'../../assets/images/icon-' + data.platform + '.svg'" [alt]="data.platform">
+    @{{data.handler}}
+  </p>
+  <p class="numbers">
+    {{ data.value | round }}
+    <small>{{data.metric}}</small>
+  </p>
+  <p class="variation" [ngClass]="data.variation.type">
+    <img [src]="'../../assets/images/icon-' + data.variation.type + '.svg'" [alt]="data.platform">
+    {{data.variation.quantity}} today
+  </p>
+</article>

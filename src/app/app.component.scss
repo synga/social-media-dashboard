@@ -1,0 +1,88 @@
+main {
+  margin: 0 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 0;
+
+    small {
+      font-weight: 700;
+      font-size: 50%;
+    }
+  }
+}
+
+.social-cards, .overview-grid {
+  display: grid;
+  grid-template: auto / repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+section {
+  padding-top: 30px;
+}
+
+
+/* DARK MODE COLOR SCHEMA */
+main.dark {
+  header {
+    h1 {
+      color: white;
+      small {
+        color: var(--dark-text);
+      }
+    }
+  }
+  section.overview-cards h2 {
+    color: white;
+  }
+}
+
+/* LIGHT MODE COLOR SCHEMA */
+main.light {
+  header {
+    h1 {
+      color: #333;
+      small {
+        color: var(--light-text);
+      }
+    }
+  }
+  section.overview-card h2 {
+    color: #333;
+  }
+}
+
+/* Media query for medium devices */
+@media (min-width: 768px) {
+  main {
+    margin: 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    app-dark-mode-toggle {
+      width: 100%;
+    }
+  }
+  main.light {
+    h1 {
+      border-bottom: 1px solid var(--light-text);
+    }
+  }
+  main.dark {
+    h1 {
+      border-bottom: 1px solid var(--dark-text);
+    }
+  }
+}

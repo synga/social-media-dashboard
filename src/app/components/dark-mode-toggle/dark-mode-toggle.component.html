@@ -1,0 +1,8 @@
+<div class="root">
+  <p [ngClass]="{'dark': checked, 'light': !checked}">Dark Mode</p>
+  <div class="toggle" (click)="changeToggleState()">
+    <input type="checkbox" [checked]="checked">
+    <span class="slider"></span>
+  </div>
+</div>
+

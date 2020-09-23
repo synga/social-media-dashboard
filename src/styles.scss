@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  // Primary
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+  --toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --toggle-light: hsl(230, 22%, 74%);
+
+  // neutral dark
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-pattern: hsl(232, 19%, 15%);
+  --dark-card-bg: hsl(228, 28%, 20%);
+  --dark-text: hsl(228, 34%, 66%);
+  --dark-text-contrast: hsl(0, 0%, 100%);
+
+  // neutral light
+  --light-bg: hsl(0, 0%, 100%);
+  --light-pattern: hsl(225, 100%, 98%);
+  --light-card-bg: hsl(227, 47%, 96%);
+  --light-text:hsl(228, 12%, 44%);
+  --light-text-contrast: hsl(230, 17%, 14%);
+}
+
+body {
+  font-family: 'Inter';
+  font-size: 14px;
+  margin: 0;
+
+  .pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 35%;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+/* DARK MODE COLOR SCHEMA */
+body.dark {
+  background-color: var(--dark-bg);
+  .pattern {
+    background: var(--dark-pattern);
+  }
+}
+
+/* LIGHT MODE COLOR SCHEMA */
+body.light {
+  background-color: var(--light-bg);
+  .pattern {
+    background: var(--light-pattern);
+  }
+}

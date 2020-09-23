@@ -1,27 +1,30 @@
 # SocialMediaDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+This project is a study/challenge granted by [Frontend Mentor](https://www.frontendmentor.io). You can view the challenge
+[here](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
 
-## Development server
+## About the challenge
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The idea is a simple dashboard with information about social media, like views, retweets, subcribers
+and so on (the numbers are not from my social medias, but i wish it was 😁). The challenge is
+to have this page showing cards with information and a toggle that changes the page to dark mode.
 
-## Code scaffolding
+It was not especified about using frameworks or not, but since i'm practicing Angular, Vue and
+React i'll probably replicate this challenge in different frameworks/libs.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## What i've done
 
-## Build
+Since i'm using Angular what i've done is:
+- A service to handle the analytics data (it's local data, but anyway, services should handle
+this stuff).
+- A service to handle the dark mode toggle status with a RxJs Subject to emit the status through
+the application.
+- A pipe to convert numbers that are >= 10000 to it's string representation with the sufix 'K', or 'M'.
+- Models/DTO for the Analytic and Overview data, for typing and intellisense.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Have some time and want to go through this app?
 
-## Running unit tests
+Since it's a study i'll be very happy if you give me feedback and say if there's something i could do
+better. I know i could do better in the CSS part, i don't know if it's organized in the best way.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+So feel free to show me better ways of doing stuff i've done 😊

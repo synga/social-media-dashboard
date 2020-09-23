@@ -1,0 +1,13 @@
+<article [ngClass]="{'dark': viewMode, 'light': !viewMode}">
+  <div class="row">
+    <p class="metric">{{ data.metric }}</p>
+    <img [src]="'../../assets/images/icon-' + data.platform + '.svg'" [alt]="data.platform">
+  </div>
+  <div class="row">
+    <p class="value">{{ data.value | round }}</p>
+    <p class="variation" [ngClass]="data.variation.type">
+      <img [src]="'../../assets/images/icon-' + data.variation.type + '.svg'" [alt]="data.platform">
+      {{data.variation.quantity}}%
+    </p>
+  </div>
+</article>
