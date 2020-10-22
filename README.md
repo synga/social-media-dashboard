@@ -3,6 +3,8 @@
 This project is a study/challenge granted by [Frontend Mentor](https://www.frontendmentor.io). You can view the challenge
 [here](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
 
+The results cacn be seen here: 
+
 ## About the challenge
 
 The idea is a simple dashboard with information about social media, like views, retweets, subcribers
