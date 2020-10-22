@@ -3,7 +3,7 @@
 This project is a study/challenge granted by [Frontend Mentor](https://www.frontendmentor.io). You can view the challenge
 [here](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
 
-The results can be seen here: 
+The results can be seen in [this Vercel deploy](https://social-media-dashboard-sandy-theta.vercel.app/).
 
 ## About the challenge
 
